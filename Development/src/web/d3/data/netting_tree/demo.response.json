@@ -1,0 +1,63 @@
+{
+  "treeId": 344,
+  "instrument": "nasdaq",
+  "root": {
+    "orderId": 899922,
+    "model": "Other Auto Netted",
+	"side": "Buy",
+    "volume": 8000,
+    "tradedVolume": 3000,
+	"nettedVolume": 0,
+	"otherNettedVolume": 5000,
+	"nettingPrice": 10.00,
+    "time": "08:22:00",
+    "children": [
+      { "orderId": 899923, "model": "A1", "side": "Buy", "volume": 555, "tradedVolume": 0, "nettedVolume": 0, "otherNettedVolume": 555, "nettingPrice": 10.00, "time": "08:22:00" },
+      {
+	    "orderId": 899924,
+        "model": "Other Auto Netted",
+		"side": "Buy",
+        "volume": 10000,
+	    "tradedVolume": 2000,
+		"nettedVolume": 0,
+	    "otherNettedVolume": 8000,
+		"nettingPrice": 10.00,
+	    "time": "08:20:00",
+        "children": [
+          {"orderId": 899925, "model": "A1", "side": "Buy", "volume": 3938, "tradedVolume": 0, "nettedVolume": 0, "otherNettedVolume": 3938, "nettingPrice": 10.00, "time": "08:22:00" },
+          {"orderId": 899926, "model": "A3", "side": "Buy", "volume": 3812, "tradedVolume": 0, "nettedVolume": 0, "otherNettedVolume": 3812, "nettingPrice": 10.00, "time": "08:22:00" },
+          {
+		    "orderId": 899927,
+            "model": "Other Auto Netted",
+ 			"side": "Buy",			
+            "volume": 4043,
+		    "tradedVolume": 2000,
+			"nettedVolume": 0,
+	        "otherNettedVolume": 0,
+			"nettingPrice": 10.00,
+		    "time": "07:32:00",
+            "children": [
+	          {"orderId": 899928, "model": "A1", "side": "Buy", "volume": 3938, "tradedVolume": 0, "nettedVolume": 100, "otherNettedVolume": 3838, "nettingPrice": 10.00, "time": "07:32:00" },
+	          {"orderId": 899929, "model": "A3", "side": "Buy", "volume": 3812, "tradedVolume": 1000, "nettedVolume": 2000, "otherNettedVolume": 812, "nettingPrice": 10.00, "time": "07:32:00" },
+	          {
+			    "orderId": 899930, 
+				"model": "Other Auto Netted", 
+				"side": "Sell", 
+				"volume": 4000, 
+				"tradedVolume": 500, 
+				"nettedVolume": 3500, 
+				"otherNettedVolume": 0, 
+				"nettingPrice": 10.00, 
+				"time": "07:24:00",
+				"children": [
+	              {"orderId": 899931, "model": "A1", "side": "Buy", "volume": 3938, "tradedVolume": 0, "nettedVolume": 3938, "otherNettedVolume": 0, "nettingPrice": 10.00, "time": "07:22:00" },
+	              {"orderId": 899932, "model": "A3", "side": "Sell", "volume": 3812, "tradedVolume": 0, "nettedVolume": 0, "otherNettedVolume": 3812, "nettingPrice": 10.00, "time": "07:22:00" }
+				]
+			  }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}
