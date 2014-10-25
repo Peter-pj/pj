@@ -133,6 +133,8 @@ function get_month_data()
   });
 }
 
+var parseDate = d3.time.format("%b %Y").parse;
+
 function type(d) {
     d.date = parseDate(d.date);
     d.price = +d.price;
