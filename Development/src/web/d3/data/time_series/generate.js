@@ -130,6 +130,7 @@ function get_month_data()
         date:d.date, 
         price:+d.price
     };
+  });
 }
 
 function type(d) {
