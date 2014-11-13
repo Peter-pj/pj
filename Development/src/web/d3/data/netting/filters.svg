@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg">
+<defs>
+    <filter id="drop-shadow-0" filterUnits="userSpaceOnUse" width="250%" height="250%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="2" result="blur-out"></feGaussianBlur>
+      <feColorMatrix in="blur-out" type="hueRotate" values="180" result="color-out"></feColorMatrix>
+      <feOffset in="color-out" dx="3" dy="3" result="the-shadow"></feOffset>
+      <feBlend in="SourceGraphic" in2="the-shadow" mode="normal"></feBlend>
+    </filter>
+	<filter id="blur">
+      <feGaussianBlur stdDeviation="1" />
+    </filter>
+    <filter id="MyFilter" filterUnits="userSpaceOnUse" x="0" y="0" width="200" height="120">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="4" result="blur" />
+      <feOffset in="blur" dx="4" dy="4" result="offsetBlur" />
+      <feSpecularLighting in="blur" surfaceScale="5" specularConstant=".75" specularExponent="20" lighting-color="#bbbbbb" result="specOut">
+        <fePointLight x="-5000" y="-10000" z="20000" />
+      </feSpecularLighting>
+      <feComposite in="specOut" in2="SourceAlpha" operator="in" result="specOut" />
+      <feComposite in="SourceGraphic" in2="specOut" operator="arithmetic" k1="0" k2="1" k3="1" k4="0" result="litPaint" />
+      <feMerge>
+        <feMergeNode in="offsetBlur" />
+        <feMergeNode in="litPaint" />
+      </feMerge>
+    </filter>
+  </defs>
+  </svg>
